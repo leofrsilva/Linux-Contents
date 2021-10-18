@@ -1,0 +1,95 @@
+/*////////////////*/
+/*////////////////*/
+/* Code Container */
+/*////////////////*/
+.code-container {    
+    background-color: #141929;
+    border-radius: .25rem;
+    margin: 5px auto;
+    /* margin-left: 1rem; */
+
+    /* transition: opacity 800ms ease-in-out, max-width 600ms ease-in-out; */
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.code-container button {
+    width: 50px;
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: flex-end;
+    z-index: 1050;
+}
+.code-container pre {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+pre {   
+    height: 100%;
+    padding: 0px 15px;     
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* SCROLL */
+.code-container pre {
+    /*overflow-y: visible; */
+    overflow-y: hidden; 
+}
+.code-container pre::-webkit-scrollbar  {
+    width: 10px;
+}
+.code-container pre::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+.code-container pre::-webkit-scrollbar-button:single-button {
+    background-color: rgba(0, 0, 0, 0);
+}
+.code-container pre::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-color: transparent transparent rgba(0, 0, 0, 0) transparent;
+}
+.code-container pre::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent transparent transparent;
+}
+.code-container pre::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-color: rgba(0, 0, 0, 0) transparent transparent transparent;
+}
+.code-container pre::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: transparent transparent transparent transparent;
+}
+
+/*////////////////*/
+/* CUSTOM TAG */
+/*////////////////*/
+code span.command-install {
+    color: #89BDFF;
+}
+code span.comment {
+    color: #83BA52;    
+}
+code span.package {
+    color: #F5D67B;
+}
+code span.directory, span.link {
+    color: #E76572;
+}
+code span.name {
+    color: #FC9463;
+}
+/*code span.link {
+    color: #f1f1f1;
+}*/
+/*code span.name {
+    color: #9effb6;
+}
+code span.result {
+    color: #FC9463;
+}
+code span.all {
+    color: #59a0fd;
+}*/

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import 'style-code.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@font-face {
+    font-family: 'Greasegun';
+   src: url(../source/fonts/greasegun.ttf);
+}
+
+:root {
+    --primary-color: #52819A;
+    --secondy-color: #6AA0BD;
+    --third-color: #6CABCD;
+    --background: #f1f1f1;
+}
+
+/* RESET PAGE */
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+	font-size: 100%;
+	background: transparent;
+	box-sizing: border-box;
+    color: #000;
+}
+::selection {
+    background: var(--primary-color);
+    color: var(--background);
+}
+
+body{
+	overflow: scroll;  /* Sempre aparece a barra de rolagem. */
+	overflow-x: hidden; /* Não aparece a a barra horizontal.  */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Iceland', cursive;
+    font-weight: 700;
+    color: var(--third-color);
+
+}
+
+h1 {
+    font-size: 3.50rem;
+}
+h2 {
+    font-size: 2.75rem;
+    margin: 0;
+}
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 2.05rem;
+    margin-bottom: 0.45rem;
+}
+h4 {
+    font-size: 1.75rem;
+}
+
+/*////////////////*/
+/* CONTAINER DO CABEÇALHO */
+/*////////////////*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+.navbar .container,
+.navbar .container-fluid,
+.navbar .container-sm,
+.navbar .container-md,
+.navbar .container-lg,
+.navbar .container-xl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: 0.65rem;
+  padding-left: 0.65rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*////////////////*/
+/*////////////////*/
+/* Título do Cabeçalho */
+/*////////////////*/
+.navbar .container h1{
+    font-family: 'Greasegun', Arial, Helvetica, sans-serif;
+    /* color: var(--background-black); */
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    /* line-height: 1rem; */
+    padding: 0;
+    /* padding-bottom: 7px; */
+    margin: 0;
+}
+/*////////////////*/
+
+
+/*////////////////*/
+/*////////////////*/
+/* PAGE SECTION */
+/*////////////////*/
+.page-section {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/*////////////////*/
+/*////////////////*/
+/* CONF TABLE */
+/*////////////////*/
+table {
+	border: 1px solid #606060;
+    padding: 10px; 
+    border-collapse: colapse;
+    border-spacing: 0px;
+}
+table th, td{
+    border: 1px solid #606060;
+	padding: 10px;
+    border-collapse: colapse;
+	border-spacing: 0px;
+	text-align: left;
+	vertical-align: middle;
+}
+.col-first {
+    color: var(--secondy-color);
+    font-weight: 600;
+}
